@@ -1,0 +1,116 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search{
+    position: relative;
+    margin-bottom: 1em;
+    text-align: center;
+}
+.search input{
+    background-color:  rgb(158, 191, 247);;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    padding: 1em;
+    color: gray;
+    text-align: center;
+}
+.container {
+    width:400px;
+    height: 80vh;
+    border-color: rgba(99, 194, 238, 0.921);
+    border-style: solid;
+    border-radius:1rem ;
+    background-color: rgb(158, 191, 247);
+    box-shadow: 10px 10px 10px darkblue;
+    margin-left: auto;
+    margin-right: auto;
+}
+.upper-container{
+    position: relative;
+    overflow: hidden;
+    width:100%;
+    height:50%;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+
+}
+.upper-container img{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+   
+}
+.lower-container{
+    overflow: hidden;
+    width:100%;
+    height:50%;
+    display:flex;
+    flex-direction: column;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    
+}
+.min-max,.hum-wind{
+    display:flex;
+    justify-content: space-evenly;
+
+}
+.additional{
+    background-color: rgba(154, 166, 254, 0.867);
+    flex-grow:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin:5px;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+
+}
+.min,.max,.humidity,.wind{
+    display:flex;
+    align-items: center;
+
+}
+.humidity .temperature,.wind .temperature{
+    padding-left: 5px;
+}
+.additional img{
+    max-width: 50% ;
+    max-height: 50%;
+}
+.additional .temperature{
+max-width: 50% ;
+max-height: 50%;
+}
+
+.weather-data{
+    Position:relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 100;
+    color: black;
+    font-size: 2em;
+
+}
